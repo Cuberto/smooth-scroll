@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderBlock" customModule="AnimatedCollection" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerText" translatesAutoresizingMaskIntoConstraints="NO" id="qZh-dq-mBm">
+                    <rect key="frame" x="34" y="131" width="151" height="185"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerImage" translatesAutoresizingMaskIntoConstraints="NO" id="8XL-Uv-OeJ">
+                    <rect key="frame" x="151" y="0.0" width="224" height="210"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.89411764705882346" green="0.80000000000000004" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8XL-Uv-OeJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4v2-6g-hgE"/>
+                <constraint firstItem="8XL-Uv-OeJ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="224:375" id="MFh-iL-w5N"/>
+                <constraint firstAttribute="trailing" secondItem="8XL-Uv-OeJ" secondAttribute="trailing" id="dLf-kV-eCr"/>
+                <constraint firstItem="qZh-dq-mBm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="g8u-Po-Zs9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qZh-dq-mBm" secondAttribute="bottom" constant="44" id="lFj-oa-beF"/>
+                <constraint firstItem="qZh-dq-mBm" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="151:375" id="t11-u5-n4c"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="csImageTop" destination="4v2-6g-hgE" id="hxJ-bW-SMt"/>
+                <outlet property="csTextBottom" destination="lFj-oa-beF" id="eHb-hw-1B9"/>
+            </connections>
+            <point key="canvasLocation" x="-682.39999999999998" y="-322.03898050974516"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="headerImage" width="224" height="210"/>
+        <image name="headerText" width="151" height="185"/>
+    </resources>
+</document>
